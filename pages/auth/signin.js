@@ -1,8 +1,10 @@
 import { signIn } from "next-auth/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { pass } from "../api/auth/[...nextauth]";
 import toast, { Toaster } from "react-hot-toast";
 import Logo from "@/components/Logo";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function SignIn() {
   const [userInfo, setUserInfo] = useState({ user: "", password: "" });
@@ -30,21 +32,37 @@ export default function SignIn() {
     });
   };
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
+  const title = "masplay";
+
   return (
     <div className="backgronud-login w-screen h-screen flex items-center justify-center relative">
       <div>
         <Toaster />
       </div>
-      <div className="w-14 flex justify-center items-center absolute top-4 left-4">
+      <div className="w-14 flex justify-center items-center absolute top-4 right-4">
         <Logo />
       </div>
       <div className="w-[250px] relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
         <form className="mt-8 mb-2" onSubmit={handleSubmit}>
           <div className="mb-4 flex flex-col gap-6">
             <div className="w-full flex flex-col">
-              <span className="text-[30px] text-white text-start w-full font-bold">
-                masplay
-              </span>
+              <div className="flex w-full">
+                {title.split("").map((letter, index) => (
+                  <span
+                    key={index}
+                    data-aos-delay={`${100 * index}`}
+                    data-aos="fade-right"
+                    className="text-[30px] text-white text-start  font-bold"
+                  >
+                    {letter}
+                  </span>
+                ))}
+              </div>
+
               <span className="text-[12px] text-blue-gray-200 text-start w-full font-light">
                 RETAIL BOOK 2024
               </span>
