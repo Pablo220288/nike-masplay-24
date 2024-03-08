@@ -11,7 +11,7 @@ export default function App({
       <Head>
         <link
           rel="icon"
-          href="/assets/nike-4-logo-orange.jpg"
+          href="/assets/nike-4-logo-orange.png"
           type="image/<generated>"
           sizes="<generated>"
         />

@@ -1,32 +1,16 @@
 import { signIn } from "next-auth/react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { pass } from "../api/auth/[...nextauth]";
-import toast, { Toaster } from "react-hot-toast";
-import Logo from "@/components/Logo";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Loader from "@/components/Loader";
+import toast from "react-hot-toast";
+import Layout from "@/components/Layout";
 
+export const generalDelay = 600;
 export default function SignIn() {
   const [userInfo, setUserInfo] = useState({ user: "", password: "" });
-  const [loaderHide, setLoaderHide] = useState(false);
 
   const title = "masplay";
   const subtitle = "RETAIL BOOK 2024";
-  const generalDelay = 600
-
-  const loaded = () => {
-    if (typeof window !== "undefined") {
-      setLoaderHide(true);
-    }
-  };
-
-  useEffect(() => {
-    loaded();
-    AOS.init({
-      once: false,
-    });
-  }, []);
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -51,16 +35,7 @@ export default function SignIn() {
   };
 
   return (
-    <div className="w-screen h-screen flex items-center justify-center relative overflow-hidden">
-      <Loader hide={loaderHide} />
-      <div>
-        <Toaster />
-      </div>
-      <div className="absolute z-0 w-full h-full bg-cover bg-left bg-[url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/dd4b4257665325.59de8a675a18e.jpg')]"></div>
-      <div className="absolute z-20 w-full h-full backgronud-login"></div>
-      <div className="w-14 flex justify-center items-center absolute z-50 top-4 right-4">
-        <Logo />
-      </div>
+    <Layout>
       <div className="absolute z-50 w-full h-full flex items-center justify-center">
         <div className="w-[250px] relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none">
           <form className="mt-8 mb-2" onSubmit={handleSubmit}>
@@ -70,9 +45,9 @@ export default function SignIn() {
                   {title.split("").map((letter, index) => (
                     <span
                       key={index}
-                      data-aos-delay={`${(50 * index) + generalDelay}`}
+                      data-aos-delay={`${50 * index + generalDelay}`}
                       data-aos="fade-right"
-                      className="text-[40px] text-white text-start  font-bold"
+                      className="text-[40px] text-white text-start font-bold"
                     >
                       {letter}
                     </span>
@@ -82,7 +57,7 @@ export default function SignIn() {
                   {subtitle.split("").map((letter, index) => (
                     <span
                       key={index}
-                      data-aos-delay={`${(50 * index) + generalDelay}`}
+                      data-aos-delay={`${50 * index + generalDelay}`}
                       data-aos="zoom-in"
                       className="text-[14px] text-blue-gray-200 text-start font-light"
                     >
@@ -91,7 +66,11 @@ export default function SignIn() {
                   ))}
                 </div>
               </div>
-              <div data-aos="zoom-in" data-aos-delay={`${generalDelay + 100}`} className="relative h-11 w-full ">
+              <div
+                data-aos="zoom-in"
+                data-aos-delay={`${generalDelay + 100}`}
+                className="relative h-11 w-full "
+              >
                 <input
                   className="peer h-full w-full rounded-md border-2 border-blue-gray-200 border-t-transparent bg-transparent px-3 py-3 font-sans text-sm font-normal text-black outline outline-0 transition-all placeholder-shown:border-2 placeholder-shown:border-blue-gray-900 placeholder-shown:border-t-blue-gray-900 focus:border-2 focus:border-white focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                   placeholder=" "
@@ -134,8 +113,9 @@ export default function SignIn() {
             </button>
             <button />
           </form>
+          <span className="text-[10px] text-blue-gray-200 text-start font-light">For a better experience log in on your phone.</span>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }
