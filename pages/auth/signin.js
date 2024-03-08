@@ -37,7 +37,7 @@ export default function SignIn() {
   }, []);
 
   const title = "masplay";
-
+  const subtitle = "RETAIL BOOK 2024";
   return (
     <div className="backgronud-login w-screen h-screen flex items-center justify-center relative">
       <div>
@@ -54,20 +54,27 @@ export default function SignIn() {
                 {title.split("").map((letter, index) => (
                   <span
                     key={index}
-                    data-aos-delay={`${100 * index}`}
+                    data-aos-delay={`${50 * index}`}
                     data-aos="fade-right"
-                    className="text-[30px] text-white text-start  font-bold"
+                    className="text-[35px] text-white text-start  font-bold"
                   >
                     {letter}
                   </span>
                 ))}
               </div>
-
-              <span className="text-[12px] text-blue-gray-200 text-start w-full font-light">
-                RETAIL BOOK 2024
-              </span>
+              <div className="flex w-full">
+              {subtitle.split("").map((letter, index) => (
+                  <span
+                    key={index}
+                    data-aos-delay={`${40 * index}`}
+                    data-aos="zoom-in"
+                    className="text-[14px] text-blue-gray-200 text-start font-light"                  >
+                    {letter === " " ? "\xA0" : letter}
+                  </span>
+                ))}
+              </div>
             </div>
-            <div className="relative h-11 w-full ">
+            <div data-aos="zoom-in" className="relative h-11 w-full ">
               <input
                 className="peer h-full w-full rounded-md border-2 border-blue-gray-200 border-t-transparent bg-transparent px-3 py-3 font-sans text-sm font-normal text-black outline outline-0 transition-all placeholder-shown:border-2 placeholder-shown:border-blue-gray-900 placeholder-shown:border-t-blue-gray-900 focus:border-2 focus:border-white focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                 placeholder=" "
@@ -80,7 +87,7 @@ export default function SignIn() {
                 User
               </label>
             </div>
-            <div className="relative h-11 w-full">
+            <div data-aos="zoom-in" data-aos-delay="100" className="relative h-11 w-full">
               <input
                 type="password"
                 className="peer h-full w-full rounded-md border-2 border-blue-gray-200 border-t-transparent bg-transparent px-3 py-3 font-sans text-sm font-normal text-black outline outline-0 transition-all placeholder-shown:border-2 placeholder-shown:border-blue-gray-900 placeholder-shown:border-t-blue-gray-900 focus:border-2 focus:border-white focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
@@ -99,6 +106,8 @@ export default function SignIn() {
             className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
             type="submit"
             data-ripple-light="true"
+            data-aos="fade-left"
+            data-aos-delay="200"
           >
             Login
           </button>
