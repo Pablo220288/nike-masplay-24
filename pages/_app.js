@@ -11,12 +11,12 @@ export default function App({
       <Head>
         <link
           rel="icon"
-          href="#"
+          href="/assets/nike-4-logo-orange.jpg"
           type="image/<generated>"
           sizes="<generated>"
         />
-        <title>Nike | masplay</title>
-        <meta name="descrption" content="" />
+        <title>Nike || masplay 2024</title>
+        <meta name="descrption" content="Nike masplay 2024 - Chile - Perú" />
       </Head>
       <Component {...pageProps} />
     </SessionProvider>
