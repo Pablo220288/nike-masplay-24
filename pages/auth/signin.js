@@ -56,7 +56,7 @@ export default function SignIn() {
                     key={index}
                     data-aos-delay={`${50 * index}`}
                     data-aos="fade-right"
-                    className="text-[35px] text-white text-start  font-bold"
+                    className="text-[45px] text-white text-start  font-bold"
                   >
                     {letter}
                   </span>
