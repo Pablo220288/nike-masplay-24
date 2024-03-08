@@ -25,14 +25,14 @@ export default function Home() {
   return (
     <Layout>
       <div className=" w-screen h-screen flex flex-col justify-center items-center gap-2 absolute z-40">
-        <div className="absolute z-40 top-3 left-3 font-light text-[12px] flex flex-col items-start">
+        <div className="absolute z-40 top-3 left-3 font-light text-[14px] flex flex-col items-start">
           <span data-aos="fade-right" data-aos-delay={`${generalDelay}`}>
             Welcome
           </span>
           <span
             data-aos="fade-right"
             data-aos-delay={`${generalDelay + 150}`}
-            className="text-[14px] ml-2"
+            className="text-[16px] ml-2"
           >
             {session.user.name}
           </span>
@@ -48,7 +48,7 @@ export default function Home() {
                   key={index}
                   data-aos-delay={`${50 * index + generalDelay}`}
                   data-aos="fade-right"
-                  className="text-[70px] text-white text-start font-bold"
+                  className="text-[70px] text-white text-start font-bold mr-0.5"
                 >
                   {letter}
                 </span>
@@ -57,7 +57,7 @@ export default function Home() {
           </Link>
           <Link
             href={"/chile"}
-            className="text-druk uppercase italic text-white text-[70px]"
+            className="text-druk uppercase italic text-white"
           >
             <div className="flex items-center">
               {link2.split("").map((letter, index) => (
@@ -65,7 +65,7 @@ export default function Home() {
                   key={index}
                   data-aos-delay={`${50 * index + generalDelay}`}
                   data-aos="fade-right"
-                  className="text-[70px] text-white text-start font-bold"
+                  className="text-[70px] text-white text-start font-bold mr-0.5"
                 >
                   {letter}
                 </span>
@@ -74,7 +74,7 @@ export default function Home() {
           </Link>
           <Link
             href={"/peru"}
-            className="text-druk uppercase italic text-white text-[70px]"
+            className="text-druk uppercase italic text-white"
           >
             <div className="flex items-center">
               {link3.split("").map((letter, index) => (
@@ -82,7 +82,7 @@ export default function Home() {
                   key={index}
                   data-aos-delay={`${50 * index + generalDelay}`}
                   data-aos="fade-right"
-                  className="text-[70px] text-white text-start font-bold"
+                  className="text-[70px] text-white text-start font-bold mr-0.5"
                 >
                   {letter}
                 </span>
