@@ -39,7 +39,7 @@ export default function SignIn() {
   const title = "masplay";
   const subtitle = "RETAIL BOOK 2024";
   return (
-    <div className="backgronud-login w-screen h-screen flex items-center justify-center relative">
+    <div className="backgronud-login w-screen h-screen flex items-center justify-center relative overflow-hidden">
       <div>
         <Toaster />
       </div>
@@ -56,7 +56,7 @@ export default function SignIn() {
                     key={index}
                     data-aos-delay={`${50 * index}`}
                     data-aos="fade-right"
-                    className="text-[45px] text-white text-start  font-bold"
+                    className="text-[40px] text-white text-start  font-bold"
                   >
                     {letter}
                   </span>
@@ -66,7 +66,7 @@ export default function SignIn() {
               {subtitle.split("").map((letter, index) => (
                   <span
                     key={index}
-                    data-aos-delay={`${40 * index}`}
+                    data-aos-delay={`${50 * index}`}
                     data-aos="zoom-in"
                     className="text-[14px] text-blue-gray-200 text-start font-light"                  >
                     {letter === " " ? "\xA0" : letter}
