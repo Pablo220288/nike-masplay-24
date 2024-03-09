@@ -96,7 +96,7 @@ export default function Home() {
         </div>
         <button
           onClick={logout}
-          className="absolute z-40 bottom-10 left-3 flex items-center gap-1 p-2 text-druk tracking-wide text-[20px] ml-1 uppercase"
+          className="absolute z-40 bottom-[70px] right-3 flex items-center gap-1 p-2 text-druk tracking-wide text-[20px] ml-1 uppercase"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
