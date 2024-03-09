@@ -25,14 +25,18 @@ export default function Home() {
   return (
     <Layout>
       <div className="w-screen h-screen flex flex-col justify-center items-center gap-2 absolute z-40 overflow-hidden">
-        <div className="absolute z-40 top-3 left-3 font-light text-[14px] flex flex-col items-start">
-          <span className="text-druk tracking-wide text-[20px]" data-aos="fade-right" data-aos-delay={`${generalDelay}`}>
+        <div className="absolute z-40 top-6 left-6 font-light text-[14px] flex flex-col items-start">
+          <span
+            className="text-druk tracking-wide text-[20px] uppercase"
+            data-aos="fade-right"
+            data-aos-delay={`${generalDelay}`}
+          >
             Welcome
           </span>
           <span
             data-aos="fade-right"
             data-aos-delay={`${generalDelay + 150}`}
-            className="text-druk tracking-wide text-[25px] ml-1"
+            className="text-druk tracking-wide text-[25px] ml-1 uppercase"
           >
             {session.user.name}
           </span>
@@ -92,7 +96,7 @@ export default function Home() {
         </div>
         <button
           onClick={logout}
-          className="absolute z-40 bottom-3 left-3 flex items-center gap-1 p-2 rounded-lg font-light text-[14px]"
+          className="absolute z-40 bottom-10 left-3 flex items-center gap-1 p-2 text-druk tracking-wide text-[20px] ml-1 uppercase"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

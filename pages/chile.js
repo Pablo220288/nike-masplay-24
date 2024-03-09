@@ -1,11 +1,15 @@
 import Loader from "@/components/Loader";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import SignIn from "./auth/signin";
+import { useSession } from "next-auth/react";
 
 export default function ChilePage() {
   const [loaderHide, setLoaderHide] = useState(false);
 
   const text = "return";
+
+  const { data: session } = useSession();
 
   const loaded = () => {
     if (typeof window !== "undefined") {
@@ -16,6 +20,10 @@ export default function ChilePage() {
   useEffect(() => {
     loaded();
   }, []);
+
+  if (!session) {
+    return <SignIn />;
+  }
 
   return (
     <div className="bg-black flex flex-col w-full items-center relative">
