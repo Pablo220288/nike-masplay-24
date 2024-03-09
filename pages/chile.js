@@ -79,7 +79,7 @@ export default function ChilePage() {
         </svg>
         <Link
           href={"/"}
-          className="text-xl text-druk uppercase italic text-white flex items-center"
+          className="text-xl text-druk tracking-wider uppercase italic text-white flex items-center"
         >
           return
         </Link>
