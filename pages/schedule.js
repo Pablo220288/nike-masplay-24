@@ -6,7 +6,34 @@ export default function SchedulePage() {
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center w-full h-screen absolute z-50">
-        <p>Aqui van la agenda</p>
+        <div className="w-full px-12">
+          <span className="text-xl text-druk tracking-wider uppercase">
+            SUN 17/03
+          </span>
+
+          <table className="basic mt-2">
+            <thead>
+              <tr>
+                <td></td>
+                <td></td>
+                <td className="border-l">Item</td>
+                <td className="border-l">Assistants</td>
+                <td className="border-l">Location</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ARRIVALS</td>
+                <td className="border-l border-gray-900">Night</td>
+                <td className="border-l border-gray-900">
+                  Arrivals to Lima
+                </td>
+                <td className="border-l border-gray-900">NIKE LATAM</td>
+                <td className="border-l border-gray-900">JW Marriott</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div className="fixed z-50 top-5 left-5 bg-black py-2 pr-4 pl-2 rounded-sm flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
