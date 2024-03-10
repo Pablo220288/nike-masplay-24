@@ -1,7 +1,6 @@
 import Layout from "@/components/Layout";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { generalDelay } from "./auth/signin";
 
 const sunday = [
   {
@@ -135,6 +134,141 @@ const monday = [
   },
 ];
 
+const tuesday = [
+  {
+    event: "DEPART",
+    items: [
+      {
+        hs: "6:45",
+        item: "Depart to Airport (Flight LA2697 09:35am)",
+        assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA*",
+        location: "-",
+      },
+    ],
+  },
+  {
+    event: "ARRIVALS",
+    items: [
+      {
+        hs: "16:00",
+        item: "Arrival to Hotel in Santiago",
+        assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
+        location: "Hyatt Centric",
+      },
+    ],
+  },
+  {
+    event: "CONSUMER",
+    items: [
+      {
+        hs: "17:00-20:00",
+        item: "Costanera Consumer & City Insights",
+        assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
+        location: "Costanera Center",
+      },
+    ],
+  },
+  {
+    event: "DINNER",
+    items: [
+      {
+        hs: "20:00",
+        item: "Depart to Dinner",
+        assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
+        location: "-",
+      },
+      {
+        hs: "20:15",
+        item: "Dinner at Mestizo",
+        assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
+        location: "Mestizo",
+      },
+    ],
+  },
+];
+
+const wednesday = [
+  {
+    event: "NIKE OFFICES",
+    items: [
+      {
+        hs: "09:00- 09:30",
+        item: "Meet & Greet Nike Office",
+        assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
+        location: "Nike Office",
+      },
+      {
+        hs: "09:30- 11:30",
+        item: "Equinox Andina Biz Review",
+        assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
+        location: "Nike Office",
+      },
+      {
+        hs: "11:30",
+        item: "Depart to Parque Arauco",
+        assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
+        location: "-",
+      },
+    ],
+  },
+  {
+    event: "RETAIL TOUR",
+    items: [
+      {
+        hs: "12:00-13:00",
+        item: "Nike Store Parque Arauco - Marathon 1st Door",
+        assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
+        location: "Parque Arauco",
+      },
+    ],
+  },
+  {
+    event: "LUNCH",
+    items: [
+      {
+        hs: "13:00-14:00",
+        item: "Lunch at Margo",
+        assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
+        location: "Parque Arauco",
+      },
+    ],
+  },
+  {
+    event: "RETAIL TOUR",
+    items: [
+      {
+        hs: "14:00",
+        item: "Depart to NVS Buenaventura",
+        assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
+        location: "-",
+      },
+      {
+        hs: "14:30-15:00",
+        item: "NVS Buenaventura",
+        assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
+        location: "Outlet Buenaventura",
+      },
+    ],
+  },
+  {
+    event: "DEPART",
+    items: [
+      {
+        hs: "15:00",
+        item: "Depart to Airport",
+        assistants: "NIKE LATAM",
+        location: "-",
+      },
+      {
+        hs: "15:30",
+        item: "Airport - Flight to BA LA657 18:07hrs",
+        assistants: "NIKE LATAM",
+        location: "Airport",
+      },
+    ],
+  },
+];
+
 export default function SchedulePage() {
   const [day, setDay] = useState("Sunday 18/03");
   const [eventsDay, setEventsDay] = useState([]);
@@ -152,6 +286,14 @@ export default function SchedulePage() {
 
       if (ev.target.value === "Monday 19/03") {
         setEventsDay(monday);
+      }
+
+      if (ev.target.value === "Tuesday 20/03") {
+        setEventsDay(tuesday);
+      }
+
+      if (ev.target.value === "Wednesday 21/03") {
+        setEventsDay(wednesday);
       }
     } catch (error) {
       console.error(error);
