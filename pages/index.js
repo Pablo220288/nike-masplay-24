@@ -25,18 +25,18 @@ export default function Home() {
   return (
     <Layout>
       <div className="w-screen h-screen flex flex-col justify-center items-center gap-2 absolute z-40 overflow-hidden">
-        <div className="absolute z-40 top-6 left-6 font-light text-[14px] flex flex-col items-start">
+        <div className="absolute z-40 top-6 left-6 font-light text-[14px] flex items-center">
           <span
-            className="text-druk tracking-wide text-[20px] uppercase"
+            className="ext-[20px] uppercase"
             data-aos="fade-right"
             data-aos-delay={`${generalDelay}`}
           >
-            Welcome
+            Hello, 
           </span>
           <span
             data-aos="fade-right"
             data-aos-delay={`${generalDelay + 150}`}
-            className="text-druk tracking-wide text-[25px] ml-1 uppercase"
+            className="text-druk ml-2 tracking-wide text-[25px] uppercase"
           >
             {session.user.name}
           </span>

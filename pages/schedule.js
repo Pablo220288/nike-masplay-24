@@ -311,7 +311,7 @@ export default function SchedulePage() {
   return (
     <Layout>
       <div className="flex flex-col items-center justify-start w-full h-screen absolute z-50 overflow-hidden">
-        <div className="w-full max-w-[450px] h-full flex flex-col mt-[100px] px-4 py-2 items-start justify-start">
+        <div className="w-full max-w-[450px] h-full flex flex-col pt-[100px] px-4 py-2 items-start justify-start">
           <div className="relative h-11 w-full min-w-[140px] mb-4">
             <select
               value={day}
@@ -358,7 +358,7 @@ export default function SchedulePage() {
                 </div>
               </div>
             ) : (
-              <div className="w-full mt-4 px-2 pb-[130px] flex flex-col items-start justify-start gap-4">
+              <div className="w-full mt-4 px-2 pb-4 flex flex-col items-start justify-start gap-4">
                 {eventsDay.map((event, index) => (
                   <div
                     key={index}
