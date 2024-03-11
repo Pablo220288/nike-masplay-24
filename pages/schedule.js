@@ -336,8 +336,30 @@ export default function SchedulePage() {
 
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-start w-full h-screen absolute z-50 overflow-hidden">
-        <div className="w-full max-w-[450px] h-full flex flex-col pt-[100px] px-7 pb-4 items-start justify-start">
+      <div className="flex flex-col items-center justify-start w-full h-screen absolute z-50 overflow-x-hidden">
+        <div className="w-full max-w-[450px] h-full flex flex-col pt-[100px] px-7 pb-4 items-start justify-start relative">
+          <div className="absolute z-50 top-5 left-5 bg-black py-2 pr-4 pl-2 rounded-sm flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="w-4 h-4 text-white"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.75 19.5 8.25 12l7.5-7.5"
+              />
+            </svg>
+            <Link
+              href={"/"}
+              className="text-xl text-druk tracking-wider uppercase italic text-white flex items-center"
+            >
+              back
+            </Link>
+          </div>
           <div className="w-full flex flex-col items-start mb-4 relative">
             <div className="absolute top-4 left-2">
               <svg
@@ -487,7 +509,7 @@ export default function SchedulePage() {
               </div>
             </details>
           </div>
-          <div className="w-full h-full flex flex-col px-4 pb-2 items-start justify-between overflow-y-scroll">
+          <div className="w-full h-full min-h-[300px] flex flex-col px-4 pb-2 items-start justify-between overflow-y-scroll">
             {isLoading ? (
               <div className="w-full flex items-center justify-center pt-4">
                 <div className="relative w-[25px] h-[45px] flex items-center justify-center">
@@ -568,28 +590,6 @@ export default function SchedulePage() {
               </div>
             )}
           </div>
-        </div>
-        <div className="fixed z-50 top-5 left-5 bg-black py-2 pr-4 pl-2 rounded-sm flex items-center gap-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-4 h-4 text-white"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15.75 19.5 8.25 12l7.5-7.5"
-            />
-          </svg>
-          <Link
-            href={"/"}
-            className="text-xl text-druk tracking-wider uppercase italic text-white flex items-center"
-          >
-            back
-          </Link>
         </div>
       </div>
     </Layout>

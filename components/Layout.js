@@ -11,6 +11,7 @@ export default function Layout({ children }) {
   const loaded = () => {
     if (typeof window !== "undefined") {
       setLoaderHide(true);
+      window.scrollTo(0, 0);
     }
   };
 
