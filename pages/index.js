@@ -18,47 +18,67 @@ export default function Home() {
     await signOut();
   }
 
-  const link1 = "schedule";
-  const link2 = "chile";
-  const link3 = "perú";
+  const link1 = "agenda";
+  const link2 = "perú";
+  const link3 = "chile";
 
   return (
     <Layout>
       <div className="w-screen h-screen flex flex-col justify-center items-center gap-2 absolute z-40 overflow-hidden">
-        <div className="absolute z-40 top-6 left-6 font-light text-[14px] flex items-center">
-          <span
-            className="ext-[20px] uppercase"
-            data-aos="fade-right"
-            data-aos-delay={`${generalDelay}`}
-          >
-            Hello, 
-          </span>
-          <span
-            data-aos="fade-right"
-            data-aos-delay={`${generalDelay + 150}`}
-            className="text-druk ml-2 tracking-wide text-[25px] uppercase"
-          >
-            {session.user.name}
-          </span>
-        </div>
-        <div className="flex flex-col">
+        <div className="absolute z-40 top-6 left-6 font-light text-[14px] flex flex-col items-start">
+          <div className="flex items-end">
+            <span
+              className="text-druk tracking-wide text-[20px] uppercase"
+              data-aos="fade-right"
+              data-aos-delay={`${generalDelay}`}
+            >
+              He
+            </span>
+            <span
+              data-aos="fade-right"
+              data-aos-delay={`${generalDelay + 150}`}
+              className="text-druk ml-2 tracking-wide text-[20px] uppercase"
+            >
+              {session.user.name}
+            </span>
+          </div>
+
           <Link
             href={"/schedule"}
-            className="text-druk uppercase italic text-white"
+            className="uppercase font-bold text-white pl-2 pt-2 flex items-center gap-1"
           >
+            <div data-aos="zoom-in" data-aos-delay={`${generalDelay}`}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-4 h-4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
+
             <div className="flex items-center">
               {link1.split("").map((letter, index) => (
                 <span
                   key={index}
                   data-aos-delay={`${50 * index + generalDelay}`}
                   data-aos="fade-right"
-                  className="text-[70px] text-white text-start font-bold mr-0.5"
+                  className="text-xs text-white text-start font-bold mr-0.5"
                 >
                   {letter}
                 </span>
               ))}
             </div>
           </Link>
+        </div>
+        <div className="flex flex-col">
           <Link
             href={"/chile"}
             className="text-druk uppercase italic text-white"
@@ -96,7 +116,7 @@ export default function Home() {
         </div>
         <button
           onClick={logout}
-          className="absolute z-40 bottom-[70px] right-3 flex items-center gap-1 p-2 text-druk tracking-wide text-[20px] ml-1 uppercase"
+          className="absolute z-40 bottom-[70px] right-3 flex items-center gap-1 p-2 text-druk tracking-wide text-[20px] uppercase"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

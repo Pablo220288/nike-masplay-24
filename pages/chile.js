@@ -89,7 +89,7 @@ export default function ChilePage() {
           href={"/"}
           className="text-xl text-druk tracking-wider uppercase italic text-white flex items-center"
         >
-          return
+          back
         </Link>
       </div>
     </div>

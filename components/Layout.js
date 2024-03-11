@@ -17,7 +17,7 @@ export default function Layout({ children }) {
   useEffect(() => {
     loaded();
     AOS.init({
-      once: false,
+      once: true,
     });
   }, []);
 
