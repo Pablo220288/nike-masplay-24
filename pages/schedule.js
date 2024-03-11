@@ -432,7 +432,7 @@ export default function SchedulePage() {
                 </div>
               </summary>
               <div className="flex items-start gap-2 pl-4 pr-2 py-2">
-                <span className=" text-nowrap text-sm font-light text-black text-start uppercase text-black">
+                <span className="min-w-[70px] max-w-[70px] text-end text-sm font-light text-black uppercase text-black">
                   NIKE LATAM:
                 </span>
                 <span className="text-xs font-light text-white text-start uppercase text-gray-900">
@@ -450,7 +450,7 @@ export default function SchedulePage() {
                 </div> */}
               </div>
               <div className="flex items-start gap-2 pl-4 pr-2 py-2">
-                <span className="text-sm font-light text-black text-start uppercase text-black">
+                <span className="min-w-[70px] max-w-[70px] text-end text-sm font-light text-black text-start uppercase text-black">
                   masplay:
                 </span>
                 <span className="text-xs font-light text-white text-start uppercase text-gray-900">
@@ -470,7 +470,7 @@ export default function SchedulePage() {
                 </div> */}
               </div>
               <div className="flex items-start gap-2 pl-4 pr-2 py-2">
-                <span className="text-sm font-light text-black text-start uppercase text-black">
+                <span className="min-w-[70px] max-w-[70px] text-end text-sm font-light text-black text-start uppercase text-black">
                   EQUINOX ANDINA:
                 </span>
                 <span className="text-xs font-light text-white text-start uppercase text-gray-900">
@@ -490,7 +490,7 @@ export default function SchedulePage() {
                 </div> */}
               </div>
               <div className="flex items-start gap-2 pl-4 pr-2 py-2">
-                <span className="text-sm font-light text-black text-start uppercase text-black">
+                <span className="min-w-[70px] max-w-[70px] text-end text-sm font-light text-black text-start uppercase text-black">
                   EQUINOX ANDINA* = LIMA:
                 </span>
                 <span className="text-xs font-light text-white text-start uppercase text-gray-900">
