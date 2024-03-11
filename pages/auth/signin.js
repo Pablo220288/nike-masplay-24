@@ -55,7 +55,7 @@ export default function SignIn() {
                     </span>
                   ))}
                 </div>
-                <div className="flex w-full pl-2">
+                <div className="flex w-full">
                   {subtitle2.split("").map((letter, index) => (
                     <span
                       key={index}
@@ -67,7 +67,7 @@ export default function SignIn() {
                     </span>
                   ))}
                 </div>
-                <div className="flex w-full pl-2">
+                <div className="flex w-full">
                   {subtitle.split("").map((letter, index) => (
                     <span
                       key={index}

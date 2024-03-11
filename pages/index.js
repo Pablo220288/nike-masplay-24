@@ -32,7 +32,7 @@ export default function Home() {
               data-aos="fade-right"
               data-aos-delay={`${generalDelay}`}
             >
-              He
+              Hi
             </span>
             <span
               data-aos="fade-right"
@@ -45,37 +45,27 @@ export default function Home() {
 
           <Link
             href={"/schedule"}
-            className="uppercase font-bold text-white pl-2 pt-2 flex items-center gap-1"
+            className="uppercase font-bold text-white pt-2 flex items-center gap-1"
           >
-            <div data-aos="zoom-in" data-aos-delay={`${generalDelay}`}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-4 h-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
-            </div>
-
-            <div className="flex items-center">
+            {/*             <div className="flex items-center">
               {link1.split("").map((letter, index) => (
                 <span
                   key={index}
                   data-aos-delay={`${50 * index + generalDelay}`}
                   data-aos="fade-right"
-                  className="text-xs text-white text-start font-bold mr-0.5"
+                  className="text-xs underline text-white text-start font-bold mr-0.5"
                 >
                   {letter}
                 </span>
               ))}
-            </div>
+            </div> */}
+            <span
+              data-aos="fade-right"
+              data-aos-delay={`${50 + generalDelay}`}
+              className="text-sm underline underline-offset-4 font-light text-white text-start font-bold pb-1"
+            >
+              agenda
+            </span>
           </Link>
         </div>
         <div className="flex flex-col">
