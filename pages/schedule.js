@@ -491,7 +491,7 @@ export default function SchedulePage() {
               </div>
               <div className="flex items-start gap-2 pl-4 pr-2 py-2">
                 <span className="min-w-[70px] max-w-[70px] text-end text-sm font-light text-black text-start uppercase text-black">
-                  EQUINOX ANDINA* = LIMA:
+                  EQUINOX ANDINA*<br> = LIMA:</br>
                 </span>
                 <span className="text-xs font-light text-white text-start uppercase text-gray-900">
                   Rodrigo Amenabar - Lorena Blanco - Alessandro Alonso
