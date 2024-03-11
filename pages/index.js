@@ -70,7 +70,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col">
           <Link
-            href={"/chile"}
+            href={"/peru"}
             className="text-druk uppercase italic text-white"
           >
             <div className="flex items-center">
@@ -87,7 +87,7 @@ export default function Home() {
             </div>
           </Link>
           <Link
-            href={"/peru"}
+            href={"/chile"}
             className="text-druk uppercase italic text-white"
           >
             <div className="flex items-center">
