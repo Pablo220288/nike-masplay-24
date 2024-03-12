@@ -404,6 +404,8 @@ export default function SchedulePage() {
                   <div
                     key={index}
                     className="flex flex-col items-start justify-start gap-2"
+                    data-aos-delay={`${50 * index}`}
+                    data-aos="fade-right"
                   >
                     <span className="text-nowrap text-[25px] text-druk tracking-wider uppercase">
                       {event.event}
@@ -413,6 +415,8 @@ export default function SchedulePage() {
                         <div
                           className="flex flex-col items-start justify-start gap-2 pt-2"
                           key={index}
+                          data-aos-delay={`${50 * index}`}
+                          data-aos="fade-right"
                         >
                           <span className="text-sm text-center uppercase">
                             {ev.hs}
