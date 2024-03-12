@@ -103,19 +103,6 @@ body {
   font-family: "Druk", sans-serif;
 }
 
-table.basic {
-  @apply w-full;
-}
-
-table.basic thead tr td,
-table.basic thead tr th {
-  @apply text-xs text-center uppercase border-gray-900 pb-1 px-2;
-}
-
-table.basic tbody tr td {
-  @apply text-sm pt-1 text-center text-gray-900 px-2;
-}
-
 .schedule-grid {
   width: 100%;
   padding: 0 20px 80px 20px;
@@ -124,4 +111,33 @@ table.basic tbody tr td {
   grid-auto-rows: minmax(auto, auto);
   overflow-y: scroll;
   margin-top: 100px;
+}
+
+.animation-schedule{
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }

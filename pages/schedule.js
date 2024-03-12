@@ -1,6 +1,5 @@
 import Layout from "@/components/Layout";
 import Link from "next/link";
-import Script from "next/script";
 import React, { useEffect, useState } from "react";
 
 const sunday = [
@@ -403,22 +402,22 @@ export default function SchedulePage() {
                 {eventsDay.map((event, index) => (
                   <div
                     key={index}
-                    className="flex flex-col items-start justify-start gap-2"
-                    data-aos-delay={`${50 * index}`}
-                    data-aos="fade-right"
+                    className={`flex flex-col items-start justify-start gap-2 animation-schedule ${
+                      "delay-[" + 100 * index + "]"
+                    }`}
                   >
-                    <span className="text-nowrap text-[25px] text-druk tracking-wider uppercase">
+                    <span className="text-nowrap text-[20px] text-druk tracking-wider uppercase">
                       {event.event}
                     </span>
                     <div className="flex flex-col items-start justify-start gap-2">
                       {event.items.map((ev, index) => (
                         <div
-                          className="flex flex-col items-start justify-start gap-2 pt-2"
+                          className={`flex flex-col items-start justify-start gap-2 pt-2 animation-schedule ${
+                            "delay-[" + 100 * index + "]"
+                          }`}
                           key={index}
-                          data-aos-delay={`${50 * index}`}
-                          data-aos="fade-right"
                         >
-                          <span className="text-sm text-center uppercase">
+                          <span className="text-xs text-center uppercase">
                             {ev.hs}
                           </span>
                           <div className="flex flex-col items-start justify-start gap-1">
@@ -426,7 +425,7 @@ export default function SchedulePage() {
                               <span className="text-sm text-white text-center text-druk tracking-wider uppercase text-black">
                                 ITEM:
                               </span>
-                              <span className="text-xs text-white text-start uppercase text-gray-900">
+                              <span className="text-[10px] text-white text-start uppercase text-gray-900">
                                 {ev.item}
                               </span>
                             </div>
@@ -434,7 +433,7 @@ export default function SchedulePage() {
                               <span className="text-sm text-white text-center text-druk tracking-wider uppercase text-black">
                                 Assistants:
                               </span>
-                              <span className="text-xs text-white text-start uppercase text-gray-900">
+                              <span className="text-[10px] text-white text-start uppercase text-gray-900">
                                 {ev.assistants}
                               </span>
                             </div>
@@ -442,7 +441,7 @@ export default function SchedulePage() {
                               <span className="text-sm text-white text-center text-druk tracking-wider uppercase text-black">
                                 Location:
                               </span>
-                              <span className="text-xs text-white text-start uppercase text-gray-900">
+                              <span className="text-[10px] text-white text-start uppercase text-gray-900">
                                 {ev.location}
                               </span>
                             </div>
