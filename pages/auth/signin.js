@@ -86,7 +86,7 @@ export default function SignIn() {
                 className="relative h-11 w-full "
               >
                 <input
-                  className="peer h-full w-full rounded-md border-2 border-blue-gray-200 border-t-transparent bg-transparent px-3 py-3 font-sans text-sm font-normal text-black outline outline-0 transition-all placeholder-shown:border-2 placeholder-shown:border-blue-gray-900 placeholder-shown:border-t-blue-gray-900 focus:border-2 focus:border-white focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+                  className="peer h-full w-full rounded-md border-2 border-blue-gray-200 border-t-transparent bg-transparent px-3 py-3 font-sans text-[16px] font-normal text-black outline outline-0 transition-all placeholder-shown:border-2 placeholder-shown:border-blue-gray-900 placeholder-shown:border-t-blue-gray-900 focus:border-2 focus:border-white focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                   placeholder=" "
                   value={userInfo.user}
                   onChange={(ev) =>
@@ -104,7 +104,7 @@ export default function SignIn() {
               >
                 <input
                   type="password"
-                  className="peer h-full w-full rounded-md border-2 border-blue-gray-200 border-t-transparent bg-transparent px-3 py-3 font-sans text-sm font-normal text-black outline outline-0 transition-all placeholder-shown:border-2 placeholder-shown:border-blue-gray-900 placeholder-shown:border-t-blue-gray-900 focus:border-2 focus:border-white focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+                  className="peer h-full w-full rounded-md border-2 border-blue-gray-200 border-t-transparent bg-transparent px-3 py-3 font-sans text-[16px] font-normal text-black outline outline-0 transition-all placeholder-shown:border-2 placeholder-shown:border-blue-gray-900 placeholder-shown:border-t-blue-gray-900 focus:border-2 focus:border-white focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                   placeholder=" "
                   value={userInfo.password}
                   onChange={(ev) =>
