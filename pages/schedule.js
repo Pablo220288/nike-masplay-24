@@ -403,7 +403,7 @@ export default function SchedulePage() {
                   <div
                     key={index}
                     className={`flex flex-col items-start justify-start gap-2 animation-schedule ${
-                      "delay-[" + 100 * index + "]"
+                      "delay-[" + 50 * index + "ms]"
                     }`}
                   >
                     <span className="text-nowrap text-[20px] text-druk tracking-wider uppercase">
@@ -412,9 +412,7 @@ export default function SchedulePage() {
                     <div className="flex flex-col items-start justify-start gap-2">
                       {event.items.map((ev, index) => (
                         <div
-                          className={`flex flex-col items-start justify-start gap-2 pt-2 animation-schedule ${
-                            "delay-[" + 100 * index + "]"
-                          }`}
+                          className="flex flex-col items-start justify-start gap-2 pt-2" 
                           key={index}
                         >
                           <span className="text-xs text-center uppercase">

@@ -141,7 +141,7 @@ export default function Home() {
         </div>
         <button
           onClick={logout}
-          className="absolute z-40 top-[55px] left-3 flex items-center gap-1 p-2 text-[15px] uppercase"
+          className="absolute z-40 bottom-[75px] left-3 flex items-center gap-1 p-2 text-[15px] uppercase"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
