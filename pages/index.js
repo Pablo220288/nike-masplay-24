@@ -19,8 +19,9 @@ export default function Home() {
   }
 
   const link1 = "agenda";
-  const link2 = "perú";
-  const link3 = "chile";
+  const link2 = "perú retail book";
+  const link3 = "chile retail book";
+  const link4 = "assistants";
 
   return (
     <Layout>
@@ -43,11 +44,11 @@ export default function Home() {
             </span>
           </div>
 
-          <Link
+          {/* <Link
             href={"/schedule"}
             className="uppercase font-bold text-white pt-2 flex items-center gap-1"
           >
-            {/*             <div className="flex items-center">
+            <div className="flex items-center">
               {link1.split("").map((letter, index) => (
                 <span
                   key={index}
@@ -58,7 +59,7 @@ export default function Home() {
                   {letter}
                 </span>
               ))}
-            </div> */}
+            </div>
             <span
               data-aos="fade-right"
               data-aos-delay={`${50 + generalDelay}`}
@@ -66,9 +67,43 @@ export default function Home() {
             >
               agenda
             </span>
-          </Link>
+          </Link> */}
         </div>
         <div className="flex flex-col">
+          <Link
+            href={"/schedule"}
+            className="text-druk uppercase italic text-white"
+          >
+            <div className="flex items-center">
+              {link1.split("").map((letter, index) => (
+                <span
+                  key={index}
+                  data-aos-delay={`${50 * index + generalDelay}`}
+                  data-aos="fade-right"
+                  className="text-[30px] text-white text-start font-bold mr-0.5"
+                >
+                  {letter === " " ? "\xA0" : letter}
+                </span>
+              ))}
+            </div>
+          </Link>
+          <Link
+            href={"/assistants"}
+            className="text-druk uppercase italic text-white"
+          >
+            <div className="flex items-center">
+              {link4.split("").map((letter, index) => (
+                <span
+                  key={index}
+                  data-aos-delay={`${50 * index + generalDelay}`}
+                  data-aos="fade-right"
+                  className="text-[30px] text-white text-start font-bold mr-0.5"
+                >
+                  {letter === " " ? "\xA0" : letter}
+                </span>
+              ))}
+            </div>
+          </Link>
           <Link
             href={"/peru"}
             className="text-druk uppercase italic text-white"
@@ -79,9 +114,9 @@ export default function Home() {
                   key={index}
                   data-aos-delay={`${50 * index + generalDelay}`}
                   data-aos="fade-right"
-                  className="text-[70px] text-white text-start font-bold mr-0.5"
+                  className="text-[30px] text-white text-start font-bold mr-0.5"
                 >
-                  {letter}
+                  {letter === " " ? "\xA0" : letter}
                 </span>
               ))}
             </div>
@@ -96,9 +131,9 @@ export default function Home() {
                   key={index}
                   data-aos-delay={`${50 * index + generalDelay}`}
                   data-aos="fade-right"
-                  className="text-[70px] text-white text-start font-bold mr-0.5"
+                  className="text-[30px] text-white text-start font-bold mr-0.5"
                 >
-                  {letter}
+                  {letter === " " ? "\xA0" : letter}
                 </span>
               ))}
             </div>
@@ -106,7 +141,7 @@ export default function Home() {
         </div>
         <button
           onClick={logout}
-          className="absolute z-40 bottom-[70px] right-3 flex items-center gap-1 p-2 text-druk tracking-wide text-[20px] uppercase"
+          className="absolute z-40 top-[55px] left-3 flex items-center gap-1 p-2 text-[15px] uppercase"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

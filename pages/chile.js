@@ -6,6 +6,7 @@ import { useSession } from "next-auth/react";
 
 export default function ChilePage() {
   const [loaderHide, setLoaderHide] = useState(false);
+  const [loaderHidden, setLoaderHidden] = useState(false);
 
   const text = "return";
 
@@ -14,6 +15,10 @@ export default function ChilePage() {
   const loaded = () => {
     if (typeof window !== "undefined") {
       setLoaderHide(true);
+
+      setTimeout(() => {
+        setLoaderHidden(true);
+      }, "1500");
     }
   };
 
@@ -24,10 +29,18 @@ export default function ChilePage() {
   if (!session) {
     return <SignIn />;
   }
-
+console.log(setLoaderHidden)
   return (
     <div className="bg-black flex flex-col w-full items-center relative">
-      <Loader hide={loaderHide} />
+      <div
+        className={
+          loaderHidden === true
+            ? "hidden"
+            : "flex items-center justify-center"
+        }
+      >
+        <Loader hide={loaderHide} />
+      </div>
       <div>
         <img src="/assets/chile/1-ALTA.jpg/" alt="Chile1" />
       </div>

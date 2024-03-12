@@ -8,7 +8,7 @@ export const generalDelay = 600;
 export default function SignIn() {
   const [userInfo, setUserInfo] = useState({ user: "", password: "" });
 
-  const title = "masplay";
+  const title = "equinox andina";
   const subtitle = "RETAIL BOOK 2024";
   // agregado 11/03
   const subtitle2 = "EQUINOX ANDINA"
@@ -51,11 +51,11 @@ export default function SignIn() {
                       data-aos="fade-right"
                       className="text-[30px] text-white text-start font-bold"
                     >
-                      {letter}
+                      {letter === " " ? "\xA0" : letter}
                     </span>
                   ))}
                 </div>
-                <div className="flex w-full">
+{/*                 <div className="flex w-full">
                   {subtitle2.split("").map((letter, index) => (
                     <span
                       key={index}
@@ -66,7 +66,7 @@ export default function SignIn() {
                       {letter === " " ? "\xA0" : letter}
                     </span>
                   ))}
-                </div>
+                </div> */}
                 <div className="flex w-full">
                   {subtitle.split("").map((letter, index) => (
                     <span

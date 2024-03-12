@@ -271,7 +271,7 @@ const wednesday = [
 ];
 
 export default function SchedulePage() {
-  const [day, setDay] = useState("Sunday 18/03");
+  const [day, setDay] = useState("");
   const [eventsDay, setEventsDay] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -279,6 +279,10 @@ export default function SchedulePage() {
     try {
       setDay(ev.target.value);
       setIsLoading(true);
+
+      if (ev.target.value === "") {
+        setEventsDay([]);
+      }
 
       if (ev.target.value === "Sunday 18/03") {
         setEventsDay(sunday);
@@ -303,36 +307,6 @@ export default function SchedulePage() {
       }, "1000");
     }
   };
-
-  useEffect(() => {
-    setEventsDay(sunday);
-  }, []);
-
-  const nikelatam = ["Andres Sabarots", "Douglas Bowles", "Juan Pablo Villeda"];
-  const masplay = [
-    "Rodrigo Ribadeneira",
-    "Renan Meneses",
-    "Julio Santibañez",
-    "Bryan Schreier",
-    "William Salazar",
-    "Gabriela Olivera",
-    "Andres Aulestia",
-  ];
-  const equinoxandina = [
-    "Rodrigo Amenabar",
-    "Lorena Blanco",
-    "Alessandro Alonso",
-    "Julio Escoda",
-    "Nataly Leiva",
-    "Marcos Sundblad",
-    "Eugenia Chiaramonte",
-    "Ignacio Gonzalez",
-  ];
-  const equinoxandina2 = [
-    "Rodrigo Amenabar",
-    "Lorena Blanco",
-    "Alessandro Alonso",
-  ];
 
   return (
     <Layout>
@@ -385,6 +359,7 @@ export default function SchedulePage() {
                 }}
                 className="peer h-full w-full rounded-md border-2 border-blue-gray-200 border-t-transparent bg-transparent px-7 py-3 font-sans text-sm font-normal text-black outline outline-0 transition-all placeholder-shown:border-2 placeholder-shown:border-blue-gray-900 placeholder-shown:border-t-blue-gray-900 focus:border-2 focus:border-white focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
               >
+                <option value="">Select Day</option>
                 <option value="Sunday 18/03">Sunday 18/03</option>
                 <option value="Monday 19/03">Monday 19/03</option>
                 <option value="Tuesday 20/03">Tuesday 20/03</option>
@@ -394,122 +369,8 @@ export default function SchedulePage() {
                 Select day
               </label>
             </div>
-            <details className="w-full rounded-md border-2 border-blue-gray-200 flex itmes-center justify-center">
-              <summary className="w-full cursor-pointer px-2 py-[11.5px] text-black flex items-center">
-                <div className="w-full flex items-center justify-between">
-                  <div className="flex items-center gap-[5px]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-4 h-4"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
-                      />
-                    </svg>
-
-                    <span className="text-[15px]">Assistants</span>
-                  </div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-4 h-4"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 4.5v15m7.5-7.5h-15"
-                    />
-                  </svg>
-                </div>
-              </summary>
-              <div className="flex items-start gap-2 pl-4 pr-2 py-2">
-                <span className="min-w-[65px] max-w-[65px] text-end text-sm font-light text-black uppercase text-black">
-                  NIKE LATAM:
-                </span>
-                <span className="text-xs font-light text-white text-start uppercase text-gray-900">
-                  Andres Sabarots - Douglas Bowles - Juan Pablo Villeda
-                </span>
-                {/*                 <div className="flex items-start gap-1">
-                {nikelatam.map((item, index) => (
-                    <span
-                      key={index}
-                      className="text-xs font-light text-white text-start uppercase text-gray-900"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div> */}
-              </div>
-              <div className="flex items-start gap-2 pl-4 pr-2 py-2">
-                <span className="min-w-[65px] max-w-[65px] text-end text-sm font-light text-black text-start uppercase text-black">
-                  masplay:
-                </span>
-                <span className="text-xs font-light text-white text-start uppercase text-gray-900">
-                  Rodrigo Ribadeneira - Renan Meneses - Julio Santibañez - Bryan
-                  Schreier - William Salazar - Gabriela Olivera - Andres
-                  Aulestia
-                </span>
-                {/*                 <div className="flex flex-col items-start gap-1">
-                  {masplay.map((item, index) => (
-                    <span
-                      key={index}
-                      className="text-xs font-light text-white text-start uppercase text-gray-900"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div> */}
-              </div>
-              <div className="flex items-start gap-2 pl-4 pr-2 py-2">
-                <span className="min-w-[65px] max-w-[65px] text-end text-sm font-light text-black text-start uppercase text-black">
-                  EQUINOX ANDINA:
-                </span>
-                <span className="text-xs font-light text-white text-start uppercase text-gray-900">
-                  Rodrigo Amenabar - Lorena Blanco - Alessandro Alonso - Julio
-                  Escoda - Nataly Leiva - Marcos Sundblad - Eugenia Chiaramonte
-                  - Ignacio Gonzalez
-                </span>
-                {/*                 <div className="flex flex-col items-start gap-1">
-                  {masplay.map((item, index) => (
-                    <span
-                      key={index}
-                      className="text-xs font-light text-white text-start uppercase text-gray-900"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div> */}
-              </div>
-              <div className="flex items-start gap-2 pl-4 pr-2 py-2">
-                <span className="min-w-[65px] max-w-[65px] text-end text-sm font-light text-black text-start uppercase text-black">
-                  EQUINOX ANDINA* = LIMA:
-                </span>
-                <span className="text-xs font-light text-white text-start uppercase text-gray-900">
-                  Rodrigo Amenabar - Lorena Blanco - Alessandro Alonso
-                </span>
-                {/*                 <div className="flex flex-col items-start gap-1">
-                  {masplay.map((item, index) => (
-                    <span
-                      key={index}
-                      className="text-xs font-light text-white text-start uppercase text-gray-900"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div> */}
-              </div>
-            </details>
           </div>
-          <div className="w-full h-full min-h-[300px] flex flex-col px-4 pb-2 items-start justify-between overflow-y-scroll">
+          <div className="w-full h-full min-h-[300px] flex flex-col pb-2 items-start justify-between overflow-y-scroll">
             {isLoading ? (
               <div className="w-full flex items-center justify-center pt-4">
                 <div className="relative w-[25px] h-[45px] flex items-center justify-center">
@@ -538,7 +399,7 @@ export default function SchedulePage() {
                 </div>
               </div>
             ) : (
-              <div className="w-full mt-4 px-2 pb-4 flex flex-col items-start justify-start gap-4">
+              <div className="w-full mt-4 px-2 pb-4 text-white flex flex-col items-start justify-start gap-4">
                 {eventsDay.map((event, index) => (
                   <div
                     key={index}
@@ -547,7 +408,7 @@ export default function SchedulePage() {
                     <span className="text-nowrap text-[25px] text-druk tracking-wider uppercase">
                       {event.event}
                     </span>
-                    <div className="flex flex-col items-start justify-start gap-2 pl-4">
+                    <div className="flex flex-col items-start justify-start gap-2">
                       {event.items.map((ev, index) => (
                         <div
                           className="flex flex-col items-start justify-start gap-2 pt-2"
@@ -556,28 +417,28 @@ export default function SchedulePage() {
                           <span className="text-sm text-center uppercase">
                             {ev.hs}
                           </span>
-                          <div className="flex flex-col items-start justify-start pl-4 gap-1">
-                            <div className="flex items-start justify-start gap-2">
-                              <span className="text-lg text-white text-center text-druk tracking-wider uppercase text-black">
+                          <div className="flex flex-col items-start justify-start gap-1">
+                            <div className="flex items-center justify-start gap-2">
+                              <span className="text-sm text-white text-center text-druk tracking-wider uppercase text-black">
                                 ITEM:
                               </span>
-                              <span className="text-xs text-white text-start pt-1 uppercase text-gray-900">
+                              <span className="text-xs text-white text-start uppercase text-gray-900">
                                 {ev.item}
                               </span>
                             </div>
-                            <div className="flex items-start justify-start gap-2">
-                              <span className="text-lg text-white text-center text-druk tracking-wider uppercase text-black">
+                            <div className="flex items-center justify-start gap-2">
+                              <span className="text-sm text-white text-center text-druk tracking-wider uppercase text-black">
                                 Assistants:
                               </span>
-                              <span className="text-xs text-white text-start pt-1 uppercase text-gray-900">
+                              <span className="text-xs text-white text-start uppercase text-gray-900">
                                 {ev.assistants}
                               </span>
                             </div>
-                            <div className="flex items-start justify-start gap-2">
-                              <span className="text-lg text-white text-center text-druk tracking-wider uppercase text-black">
+                            <div className="flex items-center justify-start gap-2">
+                              <span className="text-sm text-white text-center text-druk tracking-wider uppercase text-black">
                                 Location:
                               </span>
-                              <span className="text-xs text-white text-start pt-1 uppercase text-gray-900">
+                              <span className="text-xs text-white text-start uppercase text-gray-900">
                                 {ev.location}
                               </span>
                             </div>
