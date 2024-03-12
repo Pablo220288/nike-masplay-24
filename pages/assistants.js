@@ -69,7 +69,7 @@ export default function AssistantsPage() {
   return (
     <Layout>
       <div className="flex flex-col items-center justify-start w-full h-screen absolute z-50 overflow-x-hidden">
-        <div className="w-full max-w-[450px] h-full flex flex-col pt-[100px] px-7 pb-4 items-start justify-start relative">
+        <div className="w-full max-w-[450px] h-full flex flex-col pt-[100px] px-4 pb-4 items-start justify-start relative">
           <div className="absolute z-50 top-5 left-5 bg-black py-2 pr-4 pl-2 rounded-sm flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"

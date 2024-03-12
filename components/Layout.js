@@ -23,7 +23,7 @@ export default function Layout({ children }) {
   }, []);
 
   return (
-    <div className="w-screen h-screen flex items-center justify-center relative overflow-hidden">
+    <div className="max-w-screen h-screen flex items-center justify-center relative overflow-hidden">
       <Loader hide={loaderHide} />
       <div>
         <Toaster />

@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <Layout>
-      <div className="w-screen h-screen flex flex-col justify-center items-center gap-2 absolute z-40 overflow-hidden">
+      <div className="w-screen h-screen flex flex-col justify-center items-center gap-2 absolute z-40 overflow-x-hidden">
         <div className="absolute z-40 top-6 left-6 font-light text-[14px] flex flex-col items-start">
           <div className="flex items-end">
             <span
