@@ -19,8 +19,8 @@ export default function Home() {
   }
 
   const link1 = "agenda";
-  const link2 = "perú retail book";
-  const link3 = "chile retail book";
+  const link2 = "lima retail info";
+  const link3 = "santiago retail info";
   const link4 = "assistants";
 
   return (
@@ -29,7 +29,7 @@ export default function Home() {
         <div className="absolute z-40 top-6 left-6 font-light text-[14px] flex flex-col items-start">
           <div className="flex items-end">
             <span
-              className="text-druk tracking-wide text-[20px] uppercase"
+              className="text-druk tracking-wide text-[28px] uppercase"
               data-aos="fade-right"
               data-aos-delay={`${generalDelay}`}
             >
@@ -38,36 +38,11 @@ export default function Home() {
             <span
               data-aos="fade-right"
               data-aos-delay={`${generalDelay + 150}`}
-              className="text-druk ml-2 tracking-wide text-[20px] uppercase"
+              className="text-druk ml-2 tracking-wide text-[28px] uppercase"
             >
               {session.user.name}
             </span>
           </div>
-
-          {/* <Link
-            href={"/schedule"}
-            className="uppercase font-bold text-white pt-2 flex items-center gap-1"
-          >
-            <div className="flex items-center">
-              {link1.split("").map((letter, index) => (
-                <span
-                  key={index}
-                  data-aos-delay={`${50 * index + generalDelay}`}
-                  data-aos="fade-right"
-                  className="text-xs underline text-white text-start font-bold mr-0.5"
-                >
-                  {letter}
-                </span>
-              ))}
-            </div>
-            <span
-              data-aos="fade-right"
-              data-aos-delay={`${50 + generalDelay}`}
-              className="text-sm underline underline-offset-4 font-light text-white text-start font-bold pb-1"
-            >
-              agenda
-            </span>
-          </Link> */}
         </div>
         <div className="flex flex-col">
           <Link
@@ -87,7 +62,7 @@ export default function Home() {
               ))}
             </div>
           </Link>
-          <Link
+          {/* <Link
             href={"/assistants"}
             className="text-druk uppercase italic text-white"
           >
@@ -103,7 +78,7 @@ export default function Home() {
                 </span>
               ))}
             </div>
-          </Link>
+          </Link> */}
           <Link
             href={"/peru"}
             className="text-druk uppercase italic text-white"

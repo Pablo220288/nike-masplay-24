@@ -1,7 +1,7 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 
-export const pass = "nikemasplay24";
+export const pass = "airmax2024";
 
 export const authOptions = {
   session: {

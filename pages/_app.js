@@ -15,7 +15,7 @@ export default function App({
           type="image/<generated>"
           sizes="<generated>"
         />
-        <title>Nike || masplay 2024</title>
+        <title>EQUINOX ANDINA 2024</title>
         <meta name="descrption" content="Nike masplay 2024 - Chile - Perú" />
       </Head>
       <Component {...pageProps} />

@@ -8,8 +8,8 @@ export const generalDelay = 600;
 export default function SignIn() {
   const [userInfo, setUserInfo] = useState({ user: "", password: "" });
 
-  const title = "equinox andina";
-  const subtitle = "RETAIL BOOK 2024";
+  const title = "EQUINOX ANDINA";
+  const subtitle = "RETAIL INFO 2024";
   // agregado 11/03
   const subtitle2 = "EQUINOX ANDINA"
   
