@@ -283,19 +283,19 @@ export default function SchedulePage() {
         setEventsDay([]);
       }
 
-      if (ev.target.value === "Sunday 18/03") {
+      if (ev.target.value === "Sunday 17/03") {
         setEventsDay(sunday);
       }
 
-      if (ev.target.value === "Monday 19/03") {
+      if (ev.target.value === "Monday 18/03") {
         setEventsDay(monday);
       }
 
-      if (ev.target.value === "Tuesday 20/03") {
+      if (ev.target.value === "Tuesday 19/03") {
         setEventsDay(tuesday);
       }
 
-      if (ev.target.value === "Wednesday 21/03") {
+      if (ev.target.value === "Wednesday 20/03") {
         setEventsDay(wednesday);
       }
     } catch (error) {
@@ -359,10 +359,10 @@ export default function SchedulePage() {
                 className="peer h-full w-full rounded-md border-2 border-blue-gray-200 border-t-transparent bg-transparent px-7 py-3 font-sans text-sm font-normal text-black outline outline-0 transition-all placeholder-shown:border-2 placeholder-shown:border-blue-gray-900 placeholder-shown:border-t-blue-gray-900 focus:border-2 focus:border-white focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
               >
                 <option value="">Select Day</option>
-                <option value="Sunday 18/03">Sunday 18/03</option>
-                <option value="Monday 19/03">Monday 19/03</option>
-                <option value="Tuesday 20/03">Tuesday 20/03</option>
-                <option value="Wednesday 21/03">Wednesday 21/03</option>
+                <option value="Sunday 17/03">Sunday 17/03</option>
+                <option value="Monday 18/03">Monday 18/03</option>
+                <option value="Tuesday 19/03">Tuesday 19/03</option>
+                <option value="Wednesday 20/03">Wednesday 20/03</option>
               </select>
               <label className="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-200 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t-2 before:border-l-2 before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t-2 after:border-r-2 after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.1] peer-placeholder-shown:text-blue-gray-900 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-white peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-white peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-white peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500">
                 Select day
