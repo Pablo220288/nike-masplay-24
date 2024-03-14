@@ -8,8 +8,6 @@ export default function ChilePage() {
   const [loaderHide, setLoaderHide] = useState(false);
   const [loaderHidden, setLoaderHidden] = useState(false);
 
-  const text = "return";
-
   const { data: session } = useSession();
 
   const loaded = () => {
@@ -42,46 +40,37 @@ console.log(setLoaderHidden)
         <Loader hide={loaderHide} />
       </div>
       <div>
-        <img src="/assets/chile/1-ALTA.jpg/" alt="Chile1" />
+        <img src="/assets/chile/1.webp/" alt="Retail Info Chile 1" />
       </div>
       <div>
-        <img src="/assets/chile/2-ALTA.jpg/" alt="Chile2" />
+        <img src="/assets/chile/2.webp/" alt="Retail Info Chile 2" />
       </div>
       <div>
-        <img src="/assets/chile/3-ALTA.jpg/" alt="Chile3" />
+        <img src="/assets/chile/3.webp/" alt="Retail Info Chile 3" />
       </div>
       <div>
-        <img src="/assets/chile/4-ALTA.jpg/" alt="Chile4" />
+        <img src="/assets/chile/4.webp/" alt="Retail Info Chile 4" />
       </div>
       <div>
-        <img src="/assets/chile/4B-ALTA.jpg/" alt="Chile5" />
+        <img src="/assets/chile/5.webp/" alt="Retail Info Chile 5" />
       </div>
       <div>
-        <img src="/assets/chile/5-ALTA.jpg/" alt="Chile6" />
+        <img src="/assets/chile/6.webp/" alt="Retail Info Chile 6" />
       </div>
       <div>
-        <img src="/assets/chile/6-ALTA.jpg/" alt="Chile7" />
+        <img src="/assets/chile/7.webp/" alt="Retail Info Chile 7" />
       </div>
       <div>
-        <img src="/assets/chile/7-ALTA.jpg/" alt="Chile8" />
+        <img src="/assets/chile/8.webp/" alt="Retail Info Chile 8" />
       </div>
       <div>
-        <img src="/assets/chile/8-ALTA.jpg/" alt="Chile9" />
+        <img src="/assets/chile/9.webp/" alt="Retail Info Chile 9" />
       </div>
       <div>
-        <img src="/assets/chile/9-ALTA.jpg/" alt="Chile10" />
+        <img src="/assets/chile/10.webp/" alt="Retail Info Chile 10" />
       </div>
       <div>
-        <img src="/assets/chile/10-ALTA.jpg/" alt="Chile11" />
-      </div>
-      <div>
-        <img src="/assets/chile/11-ALTA.jpg/" alt="Chile12" />
-      </div>
-      <div>
-        <img src="/assets/chile/12-ALTA.jpg/" alt="Chile13" />
-      </div>
-      <div>
-        <img src="/assets/chile/13-ALTA.jpg/" alt="Chile14" />
+        <img src="/assets/chile/11.webp/" alt="Retail Info Chile 11" />
       </div>
       <div className="fixed z-10 top-5 left-5 bg-black py-2 pr-4 pl-2 rounded-sm flex items-center gap-2">
         <svg
