@@ -22,7 +22,7 @@ const monday = [
     items: [
       {
         hs: "09:00- 10:00",
-        item: "Breakfast Meet and Greet",
+        item: "Breakfast Meet & Greet",
         assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
         location: "Nike Office",
       },
