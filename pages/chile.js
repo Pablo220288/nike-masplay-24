@@ -40,7 +40,7 @@ console.log(setLoaderHidden)
         <Loader hide={loaderHide} />
       </div>
       <div>
-        <img src="/assets/chile/1.webp/" alt="Retail Info Chile 1" />
+        <img src="/assets/chile/11.jpg/" alt="Retail Info Chile 1" />
       </div>
       <div>
         <img src="/assets/chile/2.webp/" alt="Retail Info Chile 2" />
