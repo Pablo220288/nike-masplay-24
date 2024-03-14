@@ -369,7 +369,7 @@ export default function SchedulePage() {
               </label>
             </div>
           </div>
-          <div className="w-full h-full min-h-[300px] flex flex-col pb-2 items-start justify-between overflow-y-scroll">
+          <div className="w-full h-full min-h-[300px] flex flex-col pb-2 items-start justify-between overflow-y-scroll scrollbar">
             {isLoading ? (
               <div className="w-full flex items-center justify-center pt-4">
                 <div className="relative w-[25px] h-[45px] flex items-center justify-center">
@@ -406,7 +406,7 @@ export default function SchedulePage() {
                       "delay-[" + 50 * index + "ms]"
                     }`}
                   >
-                    <span className="text-nowrap text-[20px] text-druk tracking-wider uppercase">
+                    <span className="text-nowrap title-schedule text-druk tracking-wider uppercase">
                       {event.event}
                     </span>
                     <div className="flex flex-col items-start justify-start gap-2">
@@ -415,31 +415,31 @@ export default function SchedulePage() {
                           className="flex flex-col items-start justify-start gap-2 pt-2" 
                           key={index}
                         >
-                          <span className="text-xs text-center uppercase">
+                          <span className="hs-schedule text-center uppercase">
                             {ev.hs}
                           </span>
                           <div className="flex flex-col items-start justify-start gap-1">
                             <div className="flex items-center justify-start gap-2">
-                              <span className="text-sm text-white text-center text-druk tracking-wider uppercase text-black">
+                              <span className="item-schedule text-white text-center text-druk tracking-wider uppercase text-black">
                                 ITEM:
                               </span>
-                              <span className="text-[10px] text-white text-start uppercase text-gray-900">
-                                {ev.item}
+                              <span className="text-schedule text-white text-start uppercase text-gray-900">
+                                {ev.item} 
                               </span>
                             </div>
                             <div className="flex items-center justify-start gap-2">
-                              <span className="text-sm text-white text-center text-druk tracking-wider uppercase text-black">
+                              <span className="item-schedule text-white text-center text-druk tracking-wider uppercase text-black">
                                 Assistants:
                               </span>
-                              <span className="text-[10px] text-white text-start uppercase text-gray-900">
+                              <span className="text-schedule text-white text-start uppercase text-gray-900">
                                 {ev.assistants}
                               </span>
                             </div>
                             <div className="flex items-center justify-start gap-2">
-                              <span className="text-sm text-white text-center text-druk tracking-wider uppercase text-black">
+                              <span className="item-schedule text-white text-center text-druk tracking-wider uppercase text-black">
                                 Location:
                               </span>
-                              <span className="text-[10px] text-white text-start uppercase text-gray-900">
+                              <span className="text-schedule text-white text-start uppercase text-gray-900">
                                 {ev.location}
                               </span>
                             </div>
