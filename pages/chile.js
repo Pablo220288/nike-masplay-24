@@ -39,37 +39,37 @@ console.log(setLoaderHidden)
       >
         <Loader hide={loaderHide} />
       </div>
-      <div>
+      <div className="max-w-[1080px]">
         <img src="/assets/chile/1.jpg/" alt="Retail Info Chile 1" />
       </div>
-      <div>
+      <div className="max-w-[1080px]">
         <img src="/assets/chile/2.webp/" alt="Retail Info Chile 2" />
       </div>
-      <div>
+      <div className="max-w-[1080px]">
         <img src="/assets/chile/3.jpg/" alt="Retail Info Chile 3" />
       </div>
-      <div>
+      <div className="max-w-[1080px]">
         <img src="/assets/chile/4.webp/" alt="Retail Info Chile 4" />
       </div>
-      <div>
+      <div className="max-w-[1080px]">
         <img src="/assets/chile/5.webp/" alt="Retail Info Chile 5" />
       </div>
-      <div>
+      <div className="max-w-[1080px]">
         <img src="/assets/chile/6.jpg/" alt="Retail Info Chile 6" />
       </div>
-      <div>
+      <div className="max-w-[1080px]">
         <img src="/assets/chile/7.webp/" alt="Retail Info Chile 7" />
       </div>
-      <div>
+      <div className="max-w-[1080px]">
         <img src="/assets/chile/8.webp/" alt="Retail Info Chile 8" />
       </div>
-      <div>
+      <div className="max-w-[1080px]">
         <img src="/assets/chile/9.webp/" alt="Retail Info Chile 9" />
       </div>
-      <div>
+      <div className="max-w-[1080px]">
         <img src="/assets/chile/10.webp/" alt="Retail Info Chile 10" />
       </div>
-      <div>
+      <div className="max-w-[1080px]">
         <img src="/assets/chile/11.webp/" alt="Retail Info Chile 11" />
       </div>
       <div className="fixed z-10 top-5 left-5 bg-black py-2 pr-4 pl-2 rounded-sm flex items-center gap-2">
