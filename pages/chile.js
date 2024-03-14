@@ -40,13 +40,13 @@ console.log(setLoaderHidden)
         <Loader hide={loaderHide} />
       </div>
       <div>
-        <img src="/assets/chile/11.jpg/" alt="Retail Info Chile 1" />
+        <img src="/assets/chile/1.jpg/" alt="Retail Info Chile 1" />
       </div>
       <div>
         <img src="/assets/chile/2.webp/" alt="Retail Info Chile 2" />
       </div>
       <div>
-        <img src="/assets/chile/3.webp/" alt="Retail Info Chile 3" />
+        <img src="/assets/chile/3.jpg/" alt="Retail Info Chile 3" />
       </div>
       <div>
         <img src="/assets/chile/4.webp/" alt="Retail Info Chile 4" />
@@ -55,7 +55,7 @@ console.log(setLoaderHidden)
         <img src="/assets/chile/5.webp/" alt="Retail Info Chile 5" />
       </div>
       <div>
-        <img src="/assets/chile/6.webp/" alt="Retail Info Chile 6" />
+        <img src="/assets/chile/6.jpg/" alt="Retail Info Chile 6" />
       </div>
       <div>
         <img src="/assets/chile/7.webp/" alt="Retail Info Chile 7" />

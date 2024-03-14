@@ -30,7 +30,7 @@ export default function Layout({ children }) {
       </div>
       <div className="absolute z-0 w-full h-full bg-cover bg-left bg-[url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/dd4b4257665325.59de8a675a18e.jpg')]"></div>
       <div className="absolute z-20 w-full h-full backgronud-login"></div>
-      <div className="w-14 flex justify-center items-center absolute z-50 top-6 right-6">
+      <div className="w-14 flex justify-center items-center absolute z-50 top-8 right-6">
         <Logo />
       </div>
       {children}
