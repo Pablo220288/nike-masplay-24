@@ -18,7 +18,7 @@ const sunday = [
 
 const monday = [
   {
-    event: "NIKE OFFICES",
+    event: "EQUINOX OFFICES",
     items: [
       {
         hs: "09:00- 10:00",
@@ -189,7 +189,7 @@ const tuesday = [
 
 const wednesday = [
   {
-    event: "NIKE OFFICES",
+    event: "EQUINOX OFFICES",
     items: [
       {
         hs: "09:00- 09:30",

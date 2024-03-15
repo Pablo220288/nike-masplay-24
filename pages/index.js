@@ -29,7 +29,7 @@ export default function Home() {
         <div className="absolute z-40 top-6 left-6 font-light text-[14px] flex flex-col items-start">
           <div className="flex items-end">
             <span
-              className="text-druk tracking-wide text-[28px] uppercase"
+              className="text-druk tracking-wide text-[32px] uppercase"
               data-aos="fade-right"
               data-aos-delay={`${generalDelay}`}
             >
@@ -38,7 +38,7 @@ export default function Home() {
             <span
               data-aos="fade-right"
               data-aos-delay={`${generalDelay + 150}`}
-              className="text-druk ml-2 tracking-wide text-[28px] uppercase"
+              className="text-druk ml-2 tracking-wide text-[32px] uppercase"
             >
               {session.user.name}
             </span>
