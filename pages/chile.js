@@ -61,7 +61,7 @@ console.log(setLoaderHidden)
         <img src="/assets/chile/7.webp/" alt="Retail Info Chile 7" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/chile/8.webp/" alt="Retail Info Chile 8" />
+        <img src="/assets/chile/8.jpg/" alt="Retail Info Chile 8" />
       </div>
       <div className="max-w-[1080px]">
         <img src="/assets/chile/9.webp/" alt="Retail Info Chile 9" />

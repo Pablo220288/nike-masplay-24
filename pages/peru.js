@@ -38,19 +38,19 @@ export default function ChilePage() {
         <Loader hide={loaderHide} />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/1.jpg/" alt="Retail Info CPeru1" />
+        <img src="/assets/peru/0.jpg/" alt="Retail Info CPeru1" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/2.webp/" alt="Retail Info CPeru2" />
+        <img src="/assets/peru/1.webp/" alt="Retail Info CPeru2" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/3.jpg/" alt="Retail Info CPeru3" />
+        <img src="/assets/peru/2jpg/" alt="Retail Info CPeru3" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/4.webp/" alt="Retail Info CPeru4" />
+        <img src="/assets/peru/3.webp/" alt="Retail Info CPeru4" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/5.webp/" alt="Retail Info CPeru5" />
+        <img src="/assets/peru/4.webp/" alt="Retail Info CPeru5" />
       </div>
       <div className="max-w-[1080px]">
         <img src="/assets/peru/6.webp/" alt="Retail Info CPeru6" />
@@ -59,31 +59,34 @@ export default function ChilePage() {
         <img src="/assets/peru/7.webp/" alt="Retail Info CPeru7" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/8.webp/" alt="Retail Info CPeru8" />
+        <img src="/assets/peru/8.jpg/" alt="Retail Info CPeru8" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/9.webp/" alt="Retail Info CPeru9" />
+        <img src="/assets/peru/9.jpg/" alt="Retail Info CPeru9" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/10.jpg/" alt="Retail Info Peru 10" />
+        <img src="/assets/peru/12.jpg/" alt="Retail Info Peru 10" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/11.webp/" alt="Retail Info Peru 11" />
+        <img src="/assets/peru/13.webp/" alt="Retail Info Peru 11" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/12.webp/" alt="Retail Info Peru 12" />
+        <img src="/assets/peru/14.jpg/" alt="Retail Info Peru 12" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/13.webp/" alt="Retail Info Peru 13" />
+        <img src="/assets/peru/15.webp/" alt="Retail Info Peru 13" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/14.webp/" alt="Retail Info Peru 14" />
+        <img src="/assets/peru/16.jpg/" alt="Retail Info Peru 13" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/15.webp/" alt="Retail Info Peru 15" />
+        <img src="/assets/peru/17.webp/" alt="Retail Info Peru 13" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/16.webp/" alt="Retail Info Peru 16" />
+        <img src="/assets/peru/18.webp/" alt="Retail Info Peru 13" />
+      </div>
+      <div className="max-w-[1080px]">
+        <img src="/assets/peru/19.webp/" alt="Retail Info Peru 13" />
       </div>
       <div className="fixed z-10 top-5 left-5 bg-black py-2 pr-4 pl-2 rounded-sm flex items-center gap-2">
         <svg
