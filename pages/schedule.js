@@ -18,19 +18,19 @@ const sunday = [
 
 const monday = [
   {
-    event: "EQUINOX OFFICES",
+    event: "",
     items: [
       {
         hs: "09:00- 10:00",
         item: "Breakfast Meet & Greet",
         assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
-        location: "Nike Office",
+        location: "Equinox Office",
       },
       {
         hs: "10:00- 11:30",
         item: "Lima Consumer Review & Peru Marketplace",
         assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
-        location: "Nike Office",
+        location: "Equinox Office",
       },
       {
         hs: "11:30",
@@ -189,19 +189,19 @@ const tuesday = [
 
 const wednesday = [
   {
-    event: "EQUINOX OFFICES",
+    event: "",
     items: [
       {
         hs: "09:00- 09:30",
-        item: "Meet & Greet Nike Office",
+        item: "Meet & Greet",
         assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
-        location: "Nike Office",
+        location: "Equinox Office",
       },
       {
         hs: "09:30- 11:30",
         item: "Equinox Andina Biz Review",
         assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
-        location: "Nike Office",
+        location: "Equinox Office",
       },
       {
         hs: "11:30",
@@ -436,10 +436,10 @@ export default function SchedulePage() {
                               </span>
                             </div>
                             <div className="flex items-center justify-start gap-2">
-                              <span className="item-schedule text-white text-center text-druk tracking-wider uppercase text-black">
+                              <span className="item-schedule text-white text-center text-druk tracking-wider uppercase">
                                 Location:
                               </span>
-                              <span className="text-schedule text-white text-start uppercase text-gray-900">
+                              <span className="text-schedule text-white text-start uppercase">
                                 {ev.location}
                               </span>
                             </div>
