@@ -62,13 +62,13 @@ export default function PeruPage() {
         <img src="/assets/peru/8.jpg/" alt="Retail Info CPeru8" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/9.jpg/" alt="Retail Info CPeru9" />
+        <img src="/assets/peru/9.webp/" alt="Retail Info CPeru9" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/12.webp/" alt="Retail Info Peru 10" />
+        <img src="/assets/peru/10.webp/" alt="Retail Info Peru 10" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/13.webp/" alt="Retail Info Peru 11" />
+        <img src="/assets/peru/11.webp/" alt="Retail Info Peru 11" />
       </div>
       <div className="max-w-[1080px]">
         <img src="/assets/peru/14.jpg/" alt="Retail Info Peru 12" />
@@ -77,7 +77,7 @@ export default function PeruPage() {
         <img src="/assets/peru/15.webp/" alt="Retail Info Peru 13" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/16.jpg/" alt="Retail Info Peru 13" />
+        <img src="/assets/peru/16.webp/" alt="Retail Info Peru 13" />
       </div>
       <div className="max-w-[1080px]">
         <img src="/assets/peru/17.webp/" alt="Retail Info Peru 13" />
