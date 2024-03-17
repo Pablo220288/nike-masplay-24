@@ -71,24 +71,19 @@ const monday = [
         hs: "13:00-13:30",
         item: "Real Plaza Salaverry",
         assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
-        location: "-",
+        location: "Mall Plaza Salaverry",
       },
       {
-        hs: "13:30",
+        hs: "13:30-14:45",
+        item: "Lunch TBD",
+        assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
+        location: "Near Mall Plaza Salaverry",
+      },
+      {
+        hs: "14:45",
         item: "Depart to Jockey Plaza",
         assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
         location: "-",
-      },
-    ],
-  },
-  {
-    event: "LUNCH",
-    items: [
-      {
-        hs: "14:00-15:15",
-        item: "Lunch at Jockey Plaza",
-        assistants: "NIKE LATAM - RR/RM - EQUINOX ANDINA",
-        location: "Jockey Plaza",
       },
     ],
   },
