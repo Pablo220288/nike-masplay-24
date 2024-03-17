@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import SignIn from "./auth/signin";
 import { useSession } from "next-auth/react";
 
-export default function ChilePage() {
+export default function PeruPage() {
   const [loaderHide, setLoaderHide] = useState(false);
   const [loaderHidden, setLoaderHidden] = useState(false);
 
@@ -27,7 +27,7 @@ export default function ChilePage() {
   if (!session) {
     return <SignIn />;
   }
-  console.log(setLoaderHidden);
+ 
   return (
     <div className="bg-black flex flex-col w-full items-center relative">
       <div
@@ -44,7 +44,7 @@ export default function ChilePage() {
         <img src="/assets/peru/1.webp/" alt="Retail Info CPeru2" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/2jpg/" alt="Retail Info CPeru3" />
+        <img src="/assets/peru/2.jpg/" alt="Retail Info CPeru3" />
       </div>
       <div className="max-w-[1080px]">
         <img src="/assets/peru/3.webp/" alt="Retail Info CPeru4" />
@@ -65,7 +65,7 @@ export default function ChilePage() {
         <img src="/assets/peru/9.jpg/" alt="Retail Info CPeru9" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/12.jpg/" alt="Retail Info Peru 10" />
+        <img src="/assets/peru/12.webp/" alt="Retail Info Peru 10" />
       </div>
       <div className="max-w-[1080px]">
         <img src="/assets/peru/13.webp/" alt="Retail Info Peru 11" />

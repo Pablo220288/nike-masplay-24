@@ -57,7 +57,7 @@ const monday = [
       },
       {
         hs: "12:40",
-        item: "Depart to NVS Plaza Santa Catalina",
+        item: "Depart to Real Plaza Salaverry",
         assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
         location: "-",
       },
@@ -126,7 +126,7 @@ const monday = [
       },
       {
         hs: "19:30",
-        item: "Dinner at AmoraMar",
+        item: "Dinner at Osaka",
         assistants: "NIKE LATAM - RR/RM - RA",
         location: "-",
       },

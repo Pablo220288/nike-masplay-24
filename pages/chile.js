@@ -27,7 +27,7 @@ export default function ChilePage() {
   if (!session) {
     return <SignIn />;
   }
-console.log(setLoaderHidden)
+
   return (
     <div className="bg-black flex flex-col w-full items-center relative">
       <div
