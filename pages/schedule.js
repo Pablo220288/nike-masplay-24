@@ -56,6 +56,12 @@ const monday = [
         location: "-",
       },
       {
+        hs: "12:10- 12:40",
+        item: "Marathon Miraflores",
+        assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
+        location: "Miraflores",
+      },
+      {
         hs: "12:40",
         item: "Depart to Real Plaza Salaverry",
         assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
@@ -63,19 +69,13 @@ const monday = [
       },
       {
         hs: "13:00-13:30",
-        item: "NVS Plaza Santa Catalina",
+        item: "Real Plaza Salaverry",
         assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
         location: "-",
       },
       {
         hs: "13:30",
         item: "Depart to Jockey Plaza",
-        assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
-        location: "-",
-      },
-      {
-        hs: "12:00",
-        item: "Depart to Marathon Miraflores",
         assistants: "NIKE LATAM - MASPLAY - EQUINOX ANDINA",
         location: "-",
       },
@@ -420,18 +420,18 @@ export default function SchedulePage() {
                           </span>
                           <div className="flex flex-col items-start justify-start gap-1">
                             <div className="flex items-center justify-start gap-2">
-                              <span className="item-schedule text-white text-center text-druk tracking-wider uppercase text-black">
+                              <span className="item-schedule text-white text-center text-druk tracking-wider uppercase">
                                 ITEM:
                               </span>
-                              <span className="text-schedule text-white text-start uppercase text-gray-900">
+                              <span className="text-schedule text-white text-start uppercase">
                                 {ev.item} 
                               </span>
                             </div>
                             <div className="flex items-center justify-start gap-2">
-                              <span className="item-schedule text-white text-center text-druk tracking-wider uppercase text-black">
+                              <span className="item-schedule text-white text-center text-druk tracking-wider uppercase">
                                 Assistants:
                               </span>
-                              <span className="text-schedule text-white text-start uppercase text-gray-900">
+                              <span className="text-schedule text-white text-start uppercase">
                                 {ev.assistants}
                               </span>
                             </div>

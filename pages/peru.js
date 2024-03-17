@@ -53,7 +53,7 @@ export default function PeruPage() {
         <img src="/assets/peru/4.webp/" alt="Retail Info CPeru5" />
       </div>
       <div className="max-w-[1080px]">
-        <img src="/assets/peru/6.webp/" alt="Retail Info CPeru6" />
+        <img src="/assets/peru/6.jpg/" alt="Retail Info CPeru6" />
       </div>
       <div className="max-w-[1080px]">
         <img src="/assets/peru/7.webp/" alt="Retail Info CPeru7" />
